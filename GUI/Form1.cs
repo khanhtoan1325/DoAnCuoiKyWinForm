@@ -42,5 +42,7 @@ namespace DangNhap
             txtUsername.Clear();
             txtPassword.Clear();
         }
+
+        
     }
 }
