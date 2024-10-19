@@ -37,12 +37,9 @@ namespace DangNhap
             }    
         }
 
-        private void btnReloat_Click(object sender, EventArgs e)
+        private void btnSignUp_Click(object sender, EventArgs e)
         {
-            txtUsername.Clear();
-            txtPassword.Clear();
-        }
 
-        
+        }
     }
 }

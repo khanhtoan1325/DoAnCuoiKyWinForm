@@ -40,7 +40,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnSignIn = new Guna.UI2.WinForms.Guna2Button();
-            this.btnReloat = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSignUp = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -76,7 +76,6 @@
             this.label1.Size = new System.Drawing.Size(361, 128);
             this.label1.TabIndex = 0;
             this.label1.Text = "Quản Lý \r\nHiệu Thuốc Tây ";
-//            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnExit
             // 
@@ -198,27 +197,28 @@
             this.btnSignIn.Text = "Đăng Nhập ";
             this.btnSignIn.Click += new System.EventHandler(this.btnSignIn_Click);
             // 
-            // btnReloat
+            // btnSignUp
             // 
-            this.btnReloat.BorderRadius = 20;
-            this.btnReloat.BorderThickness = 1;
-            this.btnReloat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnReloat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnReloat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnReloat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnReloat.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
-            this.btnReloat.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReloat.ForeColor = System.Drawing.Color.White;
-            this.btnReloat.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
-            this.btnReloat.HoverState.FillColor = System.Drawing.Color.White;
-            this.btnReloat.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.btnReloat.Image = ((System.Drawing.Image)(resources.GetObject("btnReloat.Image")));
-            this.btnReloat.Location = new System.Drawing.Point(969, 551);
-            this.btnReloat.Name = "btnReloat";
-            this.btnReloat.Size = new System.Drawing.Size(180, 45);
-            this.btnReloat.TabIndex = 6;
-            this.btnReloat.Text = "Tải Lại ";
-            this.btnReloat.Click += new System.EventHandler(this.btnReloat_Click);
+            this.btnSignUp.BorderRadius = 20;
+            this.btnSignUp.BorderThickness = 1;
+            this.btnSignUp.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSignUp.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSignUp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSignUp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSignUp.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
+            this.btnSignUp.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignUp.ForeColor = System.Drawing.Color.White;
+            this.btnSignUp.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
+            this.btnSignUp.HoverState.FillColor = System.Drawing.Color.White;
+            this.btnSignUp.HoverState.ForeColor = System.Drawing.Color.Black;
+            this.btnSignUp.Image = ((System.Drawing.Image)(resources.GetObject("btnSignUp.Image")));
+            this.btnSignUp.ImageSize = new System.Drawing.Size(35, 35);
+            this.btnSignUp.Location = new System.Drawing.Point(969, 551);
+            this.btnSignUp.Name = "btnSignUp";
+            this.btnSignUp.Size = new System.Drawing.Size(180, 45);
+            this.btnSignUp.TabIndex = 6;
+            this.btnSignUp.Text = "Đăng Ký";
+            this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
             // 
             // Form1
             // 
@@ -226,7 +226,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1380, 768);
-            this.Controls.Add(this.btnReloat);
+            this.Controls.Add(this.btnSignUp);
             this.Controls.Add(this.btnSignIn);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.pictureBox2);
@@ -263,7 +263,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Button btnSignIn;
-        private Guna.UI2.WinForms.Guna2Button btnReloat;
+        private Guna.UI2.WinForms.Guna2Button btnSignUp;
     }
 }
 

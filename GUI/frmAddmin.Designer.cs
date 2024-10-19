@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAddmin));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblUserName = new System.Windows.Forms.Label();
             this.btnLogOut = new Guna.UI2.WinForms.Guna2Button();
             this.btnViewUser = new Guna.UI2.WinForms.Guna2Button();
             this.btnProfile = new Guna.UI2.WinForms.Guna2Button();
@@ -40,11 +39,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.uC_AddUser1 = new DangNhap.Admin.UC_AddUser();
+            this.uC_Dashbord1 = new DangNhap.Admin.UC_Dashbord();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.uC_AddUser1 = new DangNhap.Admin.UC_AddUser();
-            this.uC_Dashbord1 = new DangNhap.Admin.UC_Dashbord();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -53,7 +53,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel1.Controls.Add(this.lblUserName);
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.btnLogOut);
             this.panel1.Controls.Add(this.btnViewUser);
             this.panel1.Controls.Add(this.btnProfile);
@@ -65,17 +65,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(256, 1100);
             this.panel1.TabIndex = 0;
-            // 
-            // lblUserName
-            // 
-            this.lblUserName.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUserName.ForeColor = System.Drawing.Color.Yellow;
-            this.lblUserName.Location = new System.Drawing.Point(12, 825);
-            this.lblUserName.Name = "lblUserName";
-            this.lblUserName.Size = new System.Drawing.Size(241, 56);
-            this.lblUserName.TabIndex = 3;
-            this.lblUserName.Text = "label2";
-            this.lblUserName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnLogOut
             // 
@@ -210,18 +199,6 @@
             this.panel2.Size = new System.Drawing.Size(2226, 1601);
             this.panel2.TabIndex = 1;
             // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.TargetControl = this.panel1;
-            // 
-            // guna2Elipse2
-            // 
-            this.guna2Elipse2.TargetControl = this.panel2;
-            // 
-            // guna2Elipse3
-            // 
-            this.guna2Elipse3.TargetControl = this.panel2;
-            // 
             // uC_AddUser1
             // 
             this.uC_AddUser1.Location = new System.Drawing.Point(-3, 0);
@@ -235,6 +212,29 @@
             this.uC_Dashbord1.Name = "uC_Dashbord1";
             this.uC_Dashbord1.Size = new System.Drawing.Size(1667, 1102);
             this.uC_Dashbord1.TabIndex = 0;
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.TargetControl = this.panel1;
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.TargetControl = this.panel2;
+            // 
+            // guna2Elipse3
+            // 
+            this.guna2Elipse3.TargetControl = this.panel2;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(7, 825);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(246, 62);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Hiển Thị User ĐN";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmAddmin
             // 
@@ -268,12 +268,12 @@
         private Guna.UI2.WinForms.Guna2Button btnViewUser;
         private Guna.UI2.WinForms.Guna2Button btnProfile;
         private Guna.UI2.WinForms.Guna2Button btnAddUser;
-        private System.Windows.Forms.Label lblUserName;
         private System.Windows.Forms.Panel panel2;
         private Admin.UC_Dashbord uC_Dashbord1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
         private Admin.UC_AddUser uC_AddUser1;
+        private System.Windows.Forms.Label label2;
     }
 }
