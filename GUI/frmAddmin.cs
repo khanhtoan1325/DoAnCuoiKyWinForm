@@ -15,7 +15,7 @@ namespace DangNhap
         private void frmAddmin_Load(object sender, EventArgs e)
         {
             uC_Dashbord1.Visible = false;
-            uC_AddUser1.Visible = false;
+            uC_KhoThuoc1.Visible = false;
             
         }
         public frmAddmin()
@@ -38,8 +38,8 @@ namespace DangNhap
 
         private void btnAddUser_Click(object sender, EventArgs e)
         {
-            uC_AddUser1.Visible = true;
-            uC_AddUser1.BringToFront();
+            uC_KhoThuoc1.Visible = true;
+            uC_KhoThuoc1 .BringToFront();
         }
     }
 }

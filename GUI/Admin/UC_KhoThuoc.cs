@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace DangNhap.Admin
 {
-    public partial class UC_AddUser : UserControl
+    public partial class UC_KhoThuoc : UserControl
     {
-        public UC_AddUser()
+        public UC_KhoThuoc()
         {
             InitializeComponent();
-        }
-
-        
-
-        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         

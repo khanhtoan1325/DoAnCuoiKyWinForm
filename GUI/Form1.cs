@@ -39,7 +39,9 @@ namespace DangNhap
 
         private void btnSignUp_Click(object sender, EventArgs e)
         {
-
+            frmDangKy frmDangKy = new frmDangKy();
+            frmDangKy.Show();
+            this.Hide();
         }
     }
 }

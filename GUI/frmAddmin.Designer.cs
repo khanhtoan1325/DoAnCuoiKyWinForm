@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAddmin));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.btnLogOut = new Guna.UI2.WinForms.Guna2Button();
             this.btnViewUser = new Guna.UI2.WinForms.Guna2Button();
             this.btnProfile = new Guna.UI2.WinForms.Guna2Button();
@@ -39,12 +40,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.uC_AddUser1 = new DangNhap.Admin.UC_AddUser();
             this.uC_Dashbord1 = new DangNhap.Admin.UC_Dashbord();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.label2 = new System.Windows.Forms.Label();
+            this.uC_KhoThuoc1 = new DangNhap.Admin.UC_KhoThuoc();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -65,6 +65,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(256, 1100);
             this.panel1.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(7, 825);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(246, 62);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Hiển Thị User ĐN";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnLogOut
             // 
@@ -145,7 +156,7 @@
             this.btnAddUser.Name = "btnAddUser";
             this.btnAddUser.Size = new System.Drawing.Size(256, 45);
             this.btnAddUser.TabIndex = 2;
-            this.btnAddUser.Text = "Add User";
+            this.btnAddUser.Text = "Medicine Warehouse";
             this.btnAddUser.Click += new System.EventHandler(this.btnAddUser_Click);
             // 
             // btnDashbord
@@ -192,19 +203,12 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.uC_AddUser1);
+            this.panel2.Controls.Add(this.uC_KhoThuoc1);
             this.panel2.Controls.Add(this.uC_Dashbord1);
             this.panel2.Location = new System.Drawing.Point(259, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(2226, 1601);
             this.panel2.TabIndex = 1;
-            // 
-            // uC_AddUser1
-            // 
-            this.uC_AddUser1.Location = new System.Drawing.Point(-3, 0);
-            this.uC_AddUser1.Name = "uC_AddUser1";
-            this.uC_AddUser1.Size = new System.Drawing.Size(1806, 1152);
-            this.uC_AddUser1.TabIndex = 1;
             // 
             // uC_Dashbord1
             // 
@@ -225,16 +229,12 @@
             // 
             this.guna2Elipse3.TargetControl = this.panel2;
             // 
-            // label2
+            // uC_KhoThuoc1
             // 
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(7, 825);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(246, 62);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Hiển Thị User ĐN";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.uC_KhoThuoc1.Location = new System.Drawing.Point(-3, 3);
+            this.uC_KhoThuoc1.Name = "uC_KhoThuoc1";
+            this.uC_KhoThuoc1.Size = new System.Drawing.Size(1667, 1102);
+            this.uC_KhoThuoc1.TabIndex = 1;
             // 
             // frmAddmin
             // 
@@ -272,8 +272,8 @@
         private Admin.UC_Dashbord uC_Dashbord1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
-        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
-        private Admin.UC_AddUser uC_AddUser1;
         private System.Windows.Forms.Label label2;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
+        private Admin.UC_KhoThuoc uC_KhoThuoc1;
     }
 }

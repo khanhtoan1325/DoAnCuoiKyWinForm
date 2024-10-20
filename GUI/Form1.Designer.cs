@@ -185,7 +185,7 @@
             this.btnSignIn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnSignIn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
             this.btnSignIn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSignIn.ForeColor = System.Drawing.Color.White;
+            this.btnSignIn.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btnSignIn.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
             this.btnSignIn.HoverState.FillColor = System.Drawing.Color.White;
             this.btnSignIn.HoverState.ForeColor = System.Drawing.Color.Black;
