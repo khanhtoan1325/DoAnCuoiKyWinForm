@@ -59,6 +59,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\frmNhapThuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmNhapThuoc.Designer.cs">
+      <DependentUpon>frmNhapThuoc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\UC_Dashbord.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -91,6 +97,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Admin\frmNhapThuoc.resx">
+      <DependentUpon>frmNhapThuoc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\UC_Dashbord.resx">
       <DependentUpon>UC_Dashbord.cs</DependentUpon>
     </EmbeddedResource>

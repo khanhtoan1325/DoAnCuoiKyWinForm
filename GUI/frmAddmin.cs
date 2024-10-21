@@ -41,5 +41,7 @@ namespace DangNhap
             uC_KhoThuoc1.Visible = true;
             uC_KhoThuoc1 .BringToFront();
         }
+
+        
     }
 }

@@ -231,7 +231,7 @@
             // 
             // uC_KhoThuoc1
             // 
-            this.uC_KhoThuoc1.Location = new System.Drawing.Point(-3, 3);
+            this.uC_KhoThuoc1.Location = new System.Drawing.Point(0, 3);
             this.uC_KhoThuoc1.Name = "uC_KhoThuoc1";
             this.uC_KhoThuoc1.Size = new System.Drawing.Size(1667, 1102);
             this.uC_KhoThuoc1.TabIndex = 1;

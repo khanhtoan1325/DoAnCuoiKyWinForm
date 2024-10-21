@@ -10,18 +10,16 @@ using System.Windows.Forms;
 
 namespace DangNhap.Admin
 {
-    public partial class UC_KhoThuoc : UserControl
+    public partial class frmNhapThuoc : Form
     {
-        public UC_KhoThuoc()
+        public frmNhapThuoc()
         {
             InitializeComponent();
         }
 
-        private void btnNhapThuoc_Click(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
         {
-            frmNhapThuoc  frmNhapThuoc = new frmNhapThuoc();
-            frmNhapThuoc.ShowDialog();
-            
+            Close();
         }
     }
 }
