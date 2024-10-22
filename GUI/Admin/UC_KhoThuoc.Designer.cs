@@ -50,8 +50,8 @@
             this.btnSua = new Guna.UI2.WinForms.Guna2Button();
             this.btnXoa = new Guna.UI2.WinForms.Guna2Button();
             this.btnNhapThuoc = new Guna.UI2.WinForms.Guna2Button();
-            this.cmbNhaCungCap = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2ColorTransition1 = new Guna.UI2.WinForms.Guna2ColorTransition(this.components);
+            this.txtGiaTien = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -245,7 +245,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(269, 30);
             this.label7.TabIndex = 6;
-            this.label7.Text = "Nhà Cung Cấp";
+            this.label7.Text = "Giá Tiền";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // btnTimKiem
@@ -337,24 +337,6 @@
             this.btnNhapThuoc.Text = "Nhập Thuốc";
             this.btnNhapThuoc.Click += new System.EventHandler(this.btnNhapThuoc_Click);
             // 
-            // cmbNhaCungCap
-            // 
-            this.cmbNhaCungCap.BackColor = System.Drawing.Color.Transparent;
-            this.cmbNhaCungCap.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbNhaCungCap.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbNhaCungCap.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbNhaCungCap.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbNhaCungCap.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbNhaCungCap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cmbNhaCungCap.ItemHeight = 30;
-            this.cmbNhaCungCap.Items.AddRange(new object[] {
-            "CTY Khánh Toàn",
-            "CTY Nhật Trình "});
-            this.cmbNhaCungCap.Location = new System.Drawing.Point(156, 562);
-            this.cmbNhaCungCap.Name = "cmbNhaCungCap";
-            this.cmbNhaCungCap.Size = new System.Drawing.Size(348, 36);
-            this.cmbNhaCungCap.TabIndex = 9;
-            // 
             // guna2ColorTransition1
             // 
             this.guna2ColorTransition1.ColorArray = new System.Drawing.Color[] {
@@ -362,11 +344,31 @@
         System.Drawing.Color.Blue,
         System.Drawing.Color.Orange};
             // 
+            // txtGiaTien
+            // 
+            this.txtGiaTien.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtGiaTien.DefaultText = "";
+            this.txtGiaTien.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtGiaTien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtGiaTien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtGiaTien.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtGiaTien.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtGiaTien.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtGiaTien.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtGiaTien.Location = new System.Drawing.Point(156, 570);
+            this.txtGiaTien.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtGiaTien.Name = "txtGiaTien";
+            this.txtGiaTien.PasswordChar = '\0';
+            this.txtGiaTien.PlaceholderText = "";
+            this.txtGiaTien.SelectedText = "";
+            this.txtGiaTien.Size = new System.Drawing.Size(355, 48);
+            this.txtGiaTien.TabIndex = 9;
+            // 
             // UC_KhoThuoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.cmbNhaCungCap);
+            this.Controls.Add(this.txtGiaTien);
             this.Controls.Add(this.btnNhapThuoc);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnSua);
@@ -414,7 +416,7 @@
         private Guna.UI2.WinForms.Guna2Button btnXoa;
         private Guna.UI2.WinForms.Guna2Button btnSua;
         private Guna.UI2.WinForms.Guna2Button btnTimKiem;
-        private Guna.UI2.WinForms.Guna2ComboBox cmbNhaCungCap;
         private Guna.UI2.WinForms.Guna2ColorTransition guna2ColorTransition1;
+        private Guna.UI2.WinForms.Guna2TextBox txtGiaTien;
     }
 }

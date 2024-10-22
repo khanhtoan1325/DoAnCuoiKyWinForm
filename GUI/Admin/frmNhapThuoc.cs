@@ -21,5 +21,7 @@ namespace DangNhap.Admin
         {
             Close();
         }
+
+        
     }
 }

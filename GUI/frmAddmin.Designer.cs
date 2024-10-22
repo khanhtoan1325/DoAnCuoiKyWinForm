@@ -40,10 +40,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.uC_Dashbord1 = new DangNhap.Admin.UC_Dashbord();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.uC_Dashbord1 = new DangNhap.Admin.UC_Dashbord();
             this.uC_KhoThuoc1 = new DangNhap.Admin.UC_KhoThuoc();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -70,7 +70,7 @@
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(7, 825);
+            this.label2.Location = new System.Drawing.Point(7, 956);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(246, 62);
             this.label2.TabIndex = 3;
@@ -91,7 +91,7 @@
             this.btnLogOut.HoverState.ForeColor = System.Drawing.Color.Black;
             this.btnLogOut.Image = ((System.Drawing.Image)(resources.GetObject("btnLogOut.Image")));
             this.btnLogOut.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnLogOut.Location = new System.Drawing.Point(0, 737);
+            this.btnLogOut.Location = new System.Drawing.Point(0, 868);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(256, 45);
             this.btnLogOut.TabIndex = 2;
@@ -112,7 +112,7 @@
             this.btnViewUser.HoverState.ForeColor = System.Drawing.Color.Black;
             this.btnViewUser.Image = ((System.Drawing.Image)(resources.GetObject("btnViewUser.Image")));
             this.btnViewUser.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnViewUser.Location = new System.Drawing.Point(0, 531);
+            this.btnViewUser.Location = new System.Drawing.Point(0, 662);
             this.btnViewUser.Name = "btnViewUser";
             this.btnViewUser.Size = new System.Drawing.Size(256, 45);
             this.btnViewUser.TabIndex = 2;
@@ -132,7 +132,7 @@
             this.btnProfile.HoverState.ForeColor = System.Drawing.Color.Black;
             this.btnProfile.Image = ((System.Drawing.Image)(resources.GetObject("btnProfile.Image")));
             this.btnProfile.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnProfile.Location = new System.Drawing.Point(0, 631);
+            this.btnProfile.Location = new System.Drawing.Point(0, 762);
             this.btnProfile.Name = "btnProfile";
             this.btnProfile.Size = new System.Drawing.Size(256, 45);
             this.btnProfile.TabIndex = 2;
@@ -210,13 +210,6 @@
             this.panel2.Size = new System.Drawing.Size(2226, 1601);
             this.panel2.TabIndex = 1;
             // 
-            // uC_Dashbord1
-            // 
-            this.uC_Dashbord1.Location = new System.Drawing.Point(0, 3);
-            this.uC_Dashbord1.Name = "uC_Dashbord1";
-            this.uC_Dashbord1.Size = new System.Drawing.Size(1667, 1102);
-            this.uC_Dashbord1.TabIndex = 0;
-            // 
             // guna2Elipse1
             // 
             this.guna2Elipse1.TargetControl = this.panel1;
@@ -229,9 +222,16 @@
             // 
             this.guna2Elipse3.TargetControl = this.panel2;
             // 
+            // uC_Dashbord1
+            // 
+            this.uC_Dashbord1.Location = new System.Drawing.Point(0, 3);
+            this.uC_Dashbord1.Name = "uC_Dashbord1";
+            this.uC_Dashbord1.Size = new System.Drawing.Size(1667, 1102);
+            this.uC_Dashbord1.TabIndex = 0;
+            // 
             // uC_KhoThuoc1
             // 
-            this.uC_KhoThuoc1.Location = new System.Drawing.Point(0, 3);
+            this.uC_KhoThuoc1.Location = new System.Drawing.Point(0, 0);
             this.uC_KhoThuoc1.Name = "uC_KhoThuoc1";
             this.uC_KhoThuoc1.Size = new System.Drawing.Size(1667, 1102);
             this.uC_KhoThuoc1.TabIndex = 1;
