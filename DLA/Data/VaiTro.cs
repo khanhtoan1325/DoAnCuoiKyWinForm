@@ -1,4 +1,4 @@
-namespace DLA.DATA
+namespace DLA.Data
 {
     using System;
     using System.Collections.Generic;
@@ -6,23 +6,27 @@ namespace DLA.DATA
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    [Table("Faculty")]
-    public partial class Faculty
+    [Table("VaiTro")]
+    public partial class VaiTro
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Faculty()
+        public VaiTro()
         {
-            Students = new HashSet<Student>();
+            NguoiDungs = new HashSet<NguoiDung>();
         }
 
-        [StringLength(10)]
-        public string FacultyID { get; set; }
+        [Key]
+        public int IDVaiTro { get; set; }
 
         [Required]
         [StringLength(50)]
-        public string FacultyName { get; set; }
+        public string TenVaiTro { get; set; }
+
+        [Required]
+        [StringLength(50)]
+        public string IDDangNhap { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Student> Students { get; set; }
+        public virtual ICollection<NguoiDung> NguoiDungs { get; set; }
     }
 }

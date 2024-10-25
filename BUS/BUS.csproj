@@ -48,8 +48,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="NhaCungCapService.cs" />
+    <Compile Include="NhomThuocService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThuocService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DLA\DAL.csproj">

@@ -8,18 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DangNhap.Admin
+namespace DangNhap.User
 {
-    public partial class UC_Dashbord : UserControl
+    public partial class UC_DonHang : UserControl
     {
-        public UC_Dashbord()
+        public UC_DonHang()
         {
             InitializeComponent();
         }
 
-        private void UC_Dashbord_Load(object sender, EventArgs e)
+        private void btnThanhToan_Click(object sender, EventArgs e)
         {
-
+            QRThanhToan qRThanhToan = new QRThanhToan();
+            qRThanhToan.Show();
         }
     }
 }

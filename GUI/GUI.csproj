@@ -95,8 +95,44 @@
     <Compile Include="frmAddmin.Designer.cs">
       <DependentUpon>frmAddmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmNguoiDung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNguoiDung.Designer.cs">
+      <DependentUpon>frmNguoiDung.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User\LichSu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User\LichSu.Designer.cs">
+      <DependentUpon>LichSu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\UC_DonHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User\UC_DonHang.Designer.cs">
+      <DependentUpon>UC_DonHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\QRThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\QRThanhToan.Designer.cs">
+      <DependentUpon>QRThanhToan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\UC_DatThuoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User\UC_DatThuoc.Designer.cs">
+      <DependentUpon>UC_DatThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\UC_GioiThieu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User\UC_GioiThieu.Designer.cs">
+      <DependentUpon>UC_GioiThieu.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Admin\frmNhapThuoc.resx">
       <DependentUpon>frmNhapThuoc.cs</DependentUpon>
     </EmbeddedResource>
@@ -115,6 +151,9 @@
     <EmbeddedResource Include="frmAddmin.resx">
       <DependentUpon>frmAddmin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmNguoiDung.resx">
+      <DependentUpon>frmNguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -123,7 +162,24 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="User\LichSu.resx">
+      <DependentUpon>LichSu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\UC_DonHang.resx">
+      <DependentUpon>UC_DonHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\QRThanhToan.resx">
+      <DependentUpon>QRThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\UC_DatThuoc.resx">
+      <DependentUpon>UC_DatThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\UC_GioiThieu.resx">
+      <DependentUpon>UC_GioiThieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -136,9 +192,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\BUS\BUS.csproj">
       <Project>{18e02c02-bb13-477e-b4ac-627105318c4b}</Project>
       <Name>BUS</Name>
@@ -147,6 +200,9 @@
       <Project>{ca80b298-11e0-4c1e-ac91-c63974a5eeb8}</Project>
       <Name>DAL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\qrBank.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
