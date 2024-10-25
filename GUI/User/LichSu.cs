@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DangNhap.Admin
+namespace DangNhap.User
 {
-    public partial class UC_Dashbord : UserControl
+    public partial class LichSu : UserControl
     {
-        public UC_Dashbord()
+        public LichSu()
         {
             InitializeComponent();
-        }
-
-        private void UC_Dashbord_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

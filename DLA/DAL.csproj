@@ -51,14 +51,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
-    <Compile Include="DATA\Faculty.cs" />
-    <Compile Include="DATA\Model1.cs" />
-    <Compile Include="DATA\Student.cs" />
+    <Compile Include="Data\ChiTietHoaDon.cs" />
+    <Compile Include="Data\DonViTinh.cs" />
+    <Compile Include="Data\HoaDon.cs" />
+    <Compile Include="Data\NguoiDung.cs" />
+    <Compile Include="Data\NhaCungCap.cs" />
+    <Compile Include="Data\NhomThuoc.cs" />
+    <Compile Include="Data\QLThuocContext.cs" />
+    <Compile Include="Data\Thuoc.cs" />
+    <Compile Include="Data\VaiTro.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
