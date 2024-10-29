@@ -31,6 +31,11 @@ namespace DLA.Data
         [StringLength(100)]
         public string Email { get; set; }
 
+<<<<<<< HEAD
+=======
+        public int? IDThuoc { get; set; }
+
+>>>>>>> e0dc7c3ece99bee22186e2e63e1b22415e82d051
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Thuoc> Thuocs { get; set; }
     }

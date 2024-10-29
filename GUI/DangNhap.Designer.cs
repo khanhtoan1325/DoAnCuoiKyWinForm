@@ -42,7 +42,11 @@
             this.btnSignIn = new Guna.UI2.WinForms.Guna2Button();
             this.btnSignUp = new Guna.UI2.WinForms.Guna2Button();
             this.label4 = new System.Windows.Forms.Label();
+<<<<<<< HEAD:GUI/DangNhap.Designer.cs
             this.cbbVaiTro = new Guna.UI2.WinForms.Guna2ComboBox();
+=======
+            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+>>>>>>> e0dc7c3ece99bee22186e2e63e1b22415e82d051:GUI/Form1.Designer.cs
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -114,6 +118,7 @@
             // 
             // txtName
             // 
+<<<<<<< HEAD:GUI/DangNhap.Designer.cs
             this.txtName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtName.DefaultText = "";
             this.txtName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -132,6 +137,26 @@
             this.txtName.SelectedText = "";
             this.txtName.Size = new System.Drawing.Size(258, 41);
             this.txtName.TabIndex = 1;
+=======
+            this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtUsername.DefaultText = "";
+            this.txtUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtUsername.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUsername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtUsername.ForeColor = System.Drawing.Color.Black;
+            this.txtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUsername.Location = new System.Drawing.Point(556, 279);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.PasswordChar = '\0';
+            this.txtUsername.PlaceholderText = "";
+            this.txtUsername.SelectedText = "";
+            this.txtUsername.Size = new System.Drawing.Size(258, 41);
+            this.txtUsername.TabIndex = 1;
+>>>>>>> e0dc7c3ece99bee22186e2e63e1b22415e82d051:GUI/Form1.Designer.cs
             // 
             // label3
             // 
@@ -233,6 +258,7 @@
             this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
             // 
             // label4
+<<<<<<< HEAD:GUI/DangNhap.Designer.cs
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -260,11 +286,44 @@
             // 
             // DangNhap
             // 
+=======
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(560, 417);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(61, 23);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Vai trò";
+            // 
+            // guna2ComboBox1
+            // 
+            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBox1.ItemHeight = 30;
+            this.guna2ComboBox1.Location = new System.Drawing.Point(557, 443);
+            this.guna2ComboBox1.Name = "guna2ComboBox1";
+            this.guna2ComboBox1.Size = new System.Drawing.Size(257, 36);
+            this.guna2ComboBox1.TabIndex = 8;
+            // 
+            // Form1
+            // 
+>>>>>>> e0dc7c3ece99bee22186e2e63e1b22415e82d051:GUI/Form1.Designer.cs
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1035, 624);
+<<<<<<< HEAD:GUI/DangNhap.Designer.cs
             this.Controls.Add(this.cbbVaiTro);
+=======
+            this.Controls.Add(this.guna2ComboBox1);
+>>>>>>> e0dc7c3ece99bee22186e2e63e1b22415e82d051:GUI/Form1.Designer.cs
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnSignUp);
             this.Controls.Add(this.btnSignIn);
@@ -279,7 +338,11 @@
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
+<<<<<<< HEAD:GUI/DangNhap.Designer.cs
             this.Name = "DangNhap";
+=======
+            this.Name = "Form1";
+>>>>>>> e0dc7c3ece99bee22186e2e63e1b22415e82d051:GUI/Form1.Designer.cs
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -307,7 +370,11 @@
         private Guna.UI2.WinForms.Guna2Button btnSignIn;
         private Guna.UI2.WinForms.Guna2Button btnSignUp;
         private System.Windows.Forms.Label label4;
+<<<<<<< HEAD:GUI/DangNhap.Designer.cs
         private Guna.UI2.WinForms.Guna2ComboBox cbbVaiTro;
+=======
+        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+>>>>>>> e0dc7c3ece99bee22186e2e63e1b22415e82d051:GUI/Form1.Designer.cs
     }
 }
 

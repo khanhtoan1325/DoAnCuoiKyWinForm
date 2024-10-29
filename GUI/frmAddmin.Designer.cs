@@ -45,8 +45,13 @@
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+<<<<<<< HEAD
             this.uC_KhoThuoc1 = new global::DangNhap.Admin.UC_KhoThuoc();
             this.uC_Dashbord1 = new global::DangNhap.Admin.UC_Dashbord();
+=======
+            this.uC_KhoThuoc1 = new DangNhap.Admin.UC_KhoThuoc();
+            this.uC_Dashbord1 = new DangNhap.Admin.UC_Dashbord();
+>>>>>>> e0dc7c3ece99bee22186e2e63e1b22415e82d051
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();

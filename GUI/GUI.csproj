@@ -192,10 +192,13 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+=======
     <ProjectReference Include="..\BUS\BUS.csproj">
       <Project>{18e02c02-bb13-477e-b4ac-627105318c4b}</Project>
       <Name>BUS</Name>
     </ProjectReference>
+>>>>>>> e0dc7c3ece99bee22186e2e63e1b22415e82d051
     <ProjectReference Include="..\DLA\DAL.csproj">
       <Project>{ca80b298-11e0-4c1e-ac91-c63974a5eeb8}</Project>
       <Name>DAL</Name>

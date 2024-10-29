@@ -48,13 +48,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="HoaDonService.cs" />
     <Compile Include="NguoiDungService.cs" />
+=======
+>>>>>>> e0dc7c3ece99bee22186e2e63e1b22415e82d051
     <Compile Include="NhaCungCapService.cs" />
     <Compile Include="NhomThuocService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThuocService.cs" />
+<<<<<<< HEAD
     <Compile Include="VaiTroService.cs" />
+=======
+>>>>>>> e0dc7c3ece99bee22186e2e63e1b22415e82d051
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DLA\DAL.csproj">

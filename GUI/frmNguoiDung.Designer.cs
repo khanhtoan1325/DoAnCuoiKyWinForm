@@ -38,10 +38,17 @@
             this.btnLogOut = new Guna.UI2.WinForms.Guna2Button();
             this.btnDatThuoc = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+<<<<<<< HEAD
             this.lichSu1 = new global::DangNhap.User.LichSu();
             this.donHang1 = new global::DangNhap.User.UC_DonHang();
             this.uC_GioiThieu1 = new global::DangNhap.User.UC_GioiThieu();
             this.uC_DatThuoc1 = new global::DangNhap.User.UC_DatThuoc();
+=======
+            this.lichSu1 = new DangNhap.User.LichSu();
+            this.donHang1 = new DangNhap.User.UC_DonHang();
+            this.uC_GioiThieu1 = new DangNhap.User.UC_GioiThieu();
+            this.uC_DatThuoc1 = new DangNhap.User.UC_DatThuoc();
+>>>>>>> e0dc7c3ece99bee22186e2e63e1b22415e82d051
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();

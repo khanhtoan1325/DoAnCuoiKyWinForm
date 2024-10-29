@@ -41,6 +41,11 @@ namespace DLA.Data
 
         public int? IDVaiTro { get; set; }
 
+<<<<<<< HEAD
+=======
+        public int? IDThuoc { get; set; }
+
+>>>>>>> e0dc7c3ece99bee22186e2e63e1b22415e82d051
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<HoaDon> HoaDons { get; set; }
 

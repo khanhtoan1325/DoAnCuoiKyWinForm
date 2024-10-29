@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 ﻿using BUS;
 using DangNhap.User;
+=======
+﻿using DangNhap.User;
+>>>>>>> e0dc7c3ece99bee22186e2e63e1b22415e82d051
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,7 +18,10 @@ namespace DangNhap
 {
     public partial class frmNguoiDung : Form
     {
+<<<<<<< HEAD
         private readonly NguoiDungService nguoiDungService = new NguoiDungService();
+=======
+>>>>>>> e0dc7c3ece99bee22186e2e63e1b22415e82d051
         public frmNguoiDung()
         {
             InitializeComponent();
@@ -36,7 +43,11 @@ namespace DangNhap
 
         private void btnLogOut_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             DangNhap f1 = new DangNhap();
+=======
+            Form1 f1 = new Form1();
+>>>>>>> e0dc7c3ece99bee22186e2e63e1b22415e82d051
             f1.Show();
             this.Hide();
         }

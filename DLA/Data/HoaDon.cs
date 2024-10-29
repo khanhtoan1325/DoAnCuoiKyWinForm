@@ -18,9 +18,12 @@ namespace DLA.Data
         [Key]
         public int IDHoaDon { get; set; }
 
+<<<<<<< HEAD
         [StringLength(5)]
         public string MaHoaDon { get; set; }
 
+=======
+>>>>>>> e0dc7c3ece99bee22186e2e63e1b22415e82d051
         public int SoLuongBan { get; set; }
 
         public decimal GiaBan { get; set; }
@@ -29,6 +32,11 @@ namespace DLA.Data
 
         public int? IDNguoiDung { get; set; }
 
+<<<<<<< HEAD
+=======
+        public int? IDCTHD { get; set; }
+
+>>>>>>> e0dc7c3ece99bee22186e2e63e1b22415e82d051
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ChiTietHoaDon> ChiTietHoaDons { get; set; }
 

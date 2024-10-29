@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 ﻿using BUS;
 using DLA.Data;
 using System;
+=======
+﻿using System;
+>>>>>>> e0dc7c3ece99bee22186e2e63e1b22415e82d051
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,8 +18,11 @@ namespace DangNhap.User
 {
     public partial class UC_DonHang : UserControl
     {
+<<<<<<< HEAD
         private readonly HoaDonService hoaDonService = new HoaDonService();
 
+=======
+>>>>>>> e0dc7c3ece99bee22186e2e63e1b22415e82d051
         public UC_DonHang()
         {
             InitializeComponent();
@@ -26,6 +33,7 @@ namespace DangNhap.User
             QRThanhToan qRThanhToan = new QRThanhToan();
             qRThanhToan.Show();
         }
+<<<<<<< HEAD
 
         private void UC_DonHang_Load(object sender, EventArgs e)
         {
@@ -52,5 +60,7 @@ namespace DangNhap.User
                 dgvDonHang.Rows[index].Cells[0].Value = item.ThanhTien;
             }
         }
+=======
+>>>>>>> e0dc7c3ece99bee22186e2e63e1b22415e82d051
     }
 }
