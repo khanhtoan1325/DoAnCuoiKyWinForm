@@ -68,7 +68,6 @@ namespace DangNhap.User
 
         private void fillNhomThuoc(List<NhomThuoc> listNhomThuoc)
         {
-            listNhomThuoc.Insert(0, new NhomThuoc());
             this.cbbNhomThuoc.DataSource = listNhomThuoc;
             this.cbbNhomThuoc.DisplayMember = "TenNhomThuoc";
             this.cbbNhomThuoc.ValueMember = "IDNhomThuoc";
