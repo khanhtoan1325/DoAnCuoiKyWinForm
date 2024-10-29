@@ -18,6 +18,9 @@ namespace DLA.Data
         [Key]
         public int IDHoaDon { get; set; }
 
+        [StringLength(5)]
+        public string MaHoaDon { get; set; }
+
         public int SoLuongBan { get; set; }
 
         public decimal GiaBan { get; set; }
@@ -25,8 +28,6 @@ namespace DLA.Data
         public decimal ThanhTien { get; set; }
 
         public int? IDNguoiDung { get; set; }
-
-        public int? IDCTHD { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ChiTietHoaDon> ChiTietHoaDons { get; set; }

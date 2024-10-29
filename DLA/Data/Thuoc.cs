@@ -30,8 +30,6 @@ namespace DLA.Data
         [Column(TypeName = "date")]
         public DateTime? HSD { get; set; }
 
-        public int? IDHoaDon { get; set; }
-
         public int? IDNCC { get; set; }
 
         public int? IDNhomThuoc { get; set; }

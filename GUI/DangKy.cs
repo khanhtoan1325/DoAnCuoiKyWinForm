@@ -24,7 +24,7 @@ namespace DangNhap
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1();
+            DangNhap form1 = new DangNhap();
             form1.Show();
             this.Hide();
         }

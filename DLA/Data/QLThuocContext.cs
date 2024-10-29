@@ -8,7 +8,7 @@ namespace DLA.Data
     public partial class QLThuocContext : DbContext
     {
         public QLThuocContext()
-            : base("name=QLThuocContext")
+            : base("name=QLThuocContext1")
         {
         }
 
@@ -39,6 +39,11 @@ namespace DLA.Data
                 .HasMany(e => e.Thuocs)
                 .WithOptional(e => e.DonViTinh)
                 .HasForeignKey(e => e.IDDVTinh);
+
+            modelBuilder.Entity<HoaDon>()
+                .Property(e => e.MaHoaDon)
+                .IsFixedLength()
+                .IsUnicode(false);
 
             modelBuilder.Entity<HoaDon>()
                 .Property(e => e.GiaBan)

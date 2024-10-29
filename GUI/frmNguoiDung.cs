@@ -34,7 +34,7 @@ namespace DangNhap
 
         private void btnLogOut_Click(object sender, EventArgs e)
         {
-            Form1 f1 = new Form1();
+            DangNhap f1 = new DangNhap();
             f1.Show();
             this.Hide();
         }
