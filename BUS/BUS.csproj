@@ -54,6 +54,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChiTietHoaDonService.cs" />
+    <Compile Include="DonViTinhService.cs" />
+    <Compile Include="HoaDonService.cs" />
     <Compile Include="NguoiDungService.cs" />
     <Compile Include="NhaCungCapService.cs" />
     <Compile Include="NhomThuocService.cs" />

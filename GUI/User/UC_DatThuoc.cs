@@ -104,5 +104,10 @@ namespace DangNhap.User
                 MessageBox.Show("Có lỗi xảy ra trong quá trình tìm kiếm: " + ex.Message);
             }
         }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
