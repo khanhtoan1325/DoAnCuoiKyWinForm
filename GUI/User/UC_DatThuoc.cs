@@ -12,13 +12,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web.UI.WebControls;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace DangNhap.User
 {
     public partial class UC_DatThuoc : UserControl
     {
+        private readonly ChiTietHoaDonService chiTietHoaDonService = new ChiTietHoaDonService();
+        private readonly HoaDonService hoaDonService = new HoaDonService();
         private readonly ThuocService thuocService = new ThuocService();
         private readonly NhaCungCapService nhaCungCapService = new NhaCungCapService();
+        private readonly DonViTinhService donViTinhService = new DonViTinhService();
         private readonly NhomThuocService nhomThuocService = new NhomThuocService();
         public UC_DatThuoc()
         {
@@ -57,12 +61,13 @@ namespace DangNhap.User
             foreach(var item in listThuoc)
             {
                 int index = dataGrip.Rows.Add();
-                dataGrip.Rows[index].Cells[0].Value = item.TenThuoc;
-                dataGrip.Rows[index].Cells[1].Value = item.GiaBan;
-                dataGrip.Rows[index].Cells[2].Value = item.SoLuong;
-                dataGrip.Rows[index].Cells[3].Value = item.NhomThuoc.TenNhomThuoc;
-                dataGrip.Rows[index].Cells[4].Value = item.NhaCungCap.TenNCC;
-                dataGrip.Rows[index].Cells[5].Value = item.HSD;
+                dataGrip.Rows[index].Cells[0].Value = item.IDThuoc;
+                dataGrip.Rows[index].Cells[1].Value = item.TenThuoc;
+                dataGrip.Rows[index].Cells[2].Value = item.GiaBan;
+                dataGrip.Rows[index].Cells[3].Value = item.SoLuong;
+                dataGrip.Rows[index].Cells[4].Value = item.NhomThuoc.TenNhomThuoc;
+                dataGrip.Rows[index].Cells[5].Value = item.NhaCungCap.TenNCC;
+                dataGrip.Rows[index].Cells[6].Value = item.HSD;
             }
         }
 
@@ -79,10 +84,10 @@ namespace DangNhap.User
             {
                 DataGridViewRow row = dataGrip.CurrentRow;
 
-                txtTenThuoc.Text = row.Cells[0].Value != null ? row.Cells[0].Value.ToString() : string.Empty;
-                txtGiaTien.Text = row.Cells[1].Value != null ? row.Cells[1].Value.ToString() : string.Empty;
-                txtSoLuong.Text = row.Cells[2].Value != null ? row.Cells[2].Value.ToString() : string.Empty;
-                txtNCC.Text = row.Cells[4].Value != null ? row.Cells[4].Value.ToString() : string.Empty;
+                txtTenThuoc.Text = row.Cells[1].Value != null ? row.Cells[1].Value.ToString() : string.Empty;
+                txtGiaTien.Text = row.Cells[2].Value != null ? row.Cells[2].Value.ToString() : string.Empty;
+                txtNCC.Text = row.Cells[5].Value != null ? row.Cells[5].Value.ToString() : string.Empty;                
+                cbbNhomThuoc.Text = row.Cells[4].Value != null ? row.Cells[4].Value.ToString() : string.Empty;                
             }
         }
 
@@ -107,7 +112,52 @@ namespace DangNhap.User
 
         private void btnThem_Click(object sender, EventArgs e)
         {
+            try
+            {
+                if (dataGrip.CurrentRow != null)
+                {
+                    if (dataGrip.CurrentRow.Cells[0].Value != null &&
+                        int.TryParse(dataGrip.CurrentRow.Cells[0].Value.ToString(), out int idThuoc))
+                    {
+                        if (int.TryParse(txtSoLuong.Text, out int soLuong) && soLuong > 0)
+                        {
+                            if (decimal.TryParse(txtGiaTien.Text, out decimal giaBan) &&
+                                giaBan > 0)
+                            {
+                                var chiTietHoaDon = new ChiTietHoaDon
+                                {
+                                    IDThuoc = idThuoc,
+                                    SoLuong = soLuong,
+                                    GiaBan = giaBan,
+                                };
 
+                                chiTietHoaDonService.Insert(chiTietHoaDon);
+                                MessageBox.Show("Thêm thành công thuốc vào giỏ hàng.");
+                            }
+                            else
+                            {
+                                MessageBox.Show("Vui lòng nhập giá tiền hợp lệ.");
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("Vui lòng nhập số lượng.");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("IDThuoc không hợp lệ.");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Vui lòng chọn một hàng để thêm.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi thêm vào ChiTietHoaDon: " + ex.Message);
+            }
         }
     }
 }
