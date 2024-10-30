@@ -8,7 +8,7 @@ namespace DLA.Data
     public partial class QLThuocContext : DbContext
     {
         public QLThuocContext()
-            : base("name=QLThuocContext1")
+            : base("name=QLThuocContext")
         {
         }
 
@@ -46,12 +46,8 @@ namespace DLA.Data
                 .IsUnicode(false);
 
             modelBuilder.Entity<HoaDon>()
-                .Property(e => e.GiaBan)
-                .HasPrecision(10, 2);
-
-            modelBuilder.Entity<HoaDon>()
-                .Property(e => e.ThanhTien)
-                .HasPrecision(15, 2);
+                .Property(e => e.TongTien)
+                .HasPrecision(19, 4);
 
             modelBuilder.Entity<NguoiDung>()
                 .Property(e => e.TenDangNhap)

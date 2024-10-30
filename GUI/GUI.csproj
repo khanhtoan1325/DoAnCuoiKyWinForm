@@ -103,11 +103,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="User\LichSu.cs">
+    <Compile Include="User\UC_LichSu.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="User\LichSu.Designer.cs">
-      <DependentUpon>LichSu.cs</DependentUpon>
+    <Compile Include="User\UC_LichSu.Designer.cs">
+      <DependentUpon>UC_LichSu.cs</DependentUpon>
     </Compile>
     <Compile Include="User\UC_DonHang.cs">
       <SubType>UserControl</SubType>
@@ -164,8 +164,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="User\LichSu.resx">
-      <DependentUpon>LichSu.cs</DependentUpon>
+    <EmbeddedResource Include="User\UC_LichSu.resx">
+      <DependentUpon>UC_LichSu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User\UC_DonHang.resx">
       <DependentUpon>UC_DonHang.cs</DependentUpon>

@@ -38,7 +38,7 @@
             this.btnLogOut = new Guna.UI2.WinForms.Guna2Button();
             this.btnDatThuoc = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lichSu1 = new global::DangNhap.User.LichSu();
+            this.lichSu1 = new global::DangNhap.User.UC_LichSu();
             this.donHang1 = new global::DangNhap.User.UC_DonHang();
             this.uC_GioiThieu1 = new global::DangNhap.User.UC_GioiThieu();
             this.uC_DatThuoc1 = new global::DangNhap.User.UC_DatThuoc();
@@ -267,6 +267,6 @@
         private User.UC_GioiThieu uC_GioiThieu1;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private User.UC_DonHang donHang1;
-        private User.LichSu lichSu1;
+        private User.UC_LichSu lichSu1;
     }
 }
