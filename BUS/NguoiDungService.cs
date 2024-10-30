@@ -20,9 +20,40 @@ namespace BUS
             using (var context = new QLThuocContext())
             {
                 return context.NguoiDungs
-                    .Include(u => u.VaiTro) // nếu bạn cần vai trò người dùng
+                    .Include(u => u.VaiTro)
                     .FirstOrDefault(u => u.TenDangNhap == username && u.MatKhau == password);
             }
         }
+
+        public void AddUser(NguoiDung user)
+        {
+            using (var context = new QLThuocContext())
+            {
+                context.NguoiDungs.Add(user);
+                context.SaveChanges();
+            }
+        }
+        public void UpdateUser(NguoiDung user)
+        {
+            using (var context = new QLThuocContext())
+            {
+                context.Entry(user).State = EntityState.Modified;
+                context.SaveChanges();
+            }
+        }
+
+        public void DeleteUser(int userId)
+        {
+            using (var context = new QLThuocContext())
+            {
+                var user = context.NguoiDungs.Find(userId);
+                if (user != null)
+                {
+                    context.NguoiDungs.Remove(user);
+                    context.SaveChanges();
+                }
+            }
+        }
+
     }
 }

@@ -1,4 +1,6 @@
-﻿using DangNhap.User;
+﻿using BUS;
+using DangNhap.User;
+using DLA.Data;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,11 +10,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace DangNhap
 {
     public partial class frmNguoiDung : Form
     {
+        private readonly NguoiDungService nguoiDungService = new NguoiDungService();
+        //private UC_Profile profile;
+        private NguoiDung currentUser; // Khai báo biến để lưu người dùng hiện tại
+
+        public frmNguoiDung(NguoiDung user) // Nhận một đối tượng người dùng trong constructor
+        {
+            InitializeComponent();
+            currentUser = user; // Gán đối tượng người dùng cho biến currentUser
+        }
         public frmNguoiDung()
         {
             InitializeComponent();
@@ -47,7 +59,7 @@ namespace DangNhap
 
         private void guna2TextBox1_TextChanged(object sender, EventArgs e)
         {
-          
+
         }
 
         private void btnDonHang_Click(object sender, EventArgs e)
@@ -60,6 +72,15 @@ namespace DangNhap
         {
             lichSu1.Visible = true;
             lichSu1.BringToFront();
+        }
+        public void SetUserName(string fullName)
+        {
+            txtname.Text = fullName;
+        }
+
+        private void uC_Profile1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

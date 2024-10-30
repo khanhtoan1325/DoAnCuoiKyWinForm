@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DangNhap.User;
+using DLA.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -42,6 +44,17 @@ namespace DangNhap
             uC_KhoThuoc1 .BringToFront();
         }
 
-        
+        private void uC_KhoThuoc1_Load(object sender, EventArgs e)
+        {
+
+        }
+        //public void LoadUserProfile(NguoiDung user)
+        //{
+        //    UC_Profile profile = new UC_Profile();
+        //    profile.SetUserData(user);
+        //    this.Controls.Add(profile);
+        //    profile.Dock = DockStyle.Fill;
+        //}
+
     }
 }

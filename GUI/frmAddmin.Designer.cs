@@ -42,11 +42,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.uC_KhoThuoc1 = new Admin.UC_KhoThuoc();
+            this.uC_Dashbord1 = new Admin.UC_Dashbord();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.uC_KhoThuoc1 = new global::DangNhap.Admin.UC_KhoThuoc();
-            this.uC_Dashbord1 = new global::DangNhap.Admin.UC_Dashbord();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -66,7 +66,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(-2, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(192, 894);
             this.panel1.TabIndex = 0;
@@ -98,7 +98,7 @@
             this.btnLogOut.Image = ((System.Drawing.Image)(resources.GetObject("btnLogOut.Image")));
             this.btnLogOut.ImageSize = new System.Drawing.Size(30, 30);
             this.btnLogOut.Location = new System.Drawing.Point(0, 705);
-            this.btnLogOut.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLogOut.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(192, 37);
             this.btnLogOut.TabIndex = 2;
@@ -120,7 +120,7 @@
             this.guna2Button2.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button2.Image")));
             this.guna2Button2.ImageSize = new System.Drawing.Size(30, 30);
             this.guna2Button2.Location = new System.Drawing.Point(2, 481);
-            this.guna2Button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(192, 37);
             this.guna2Button2.TabIndex = 2;
@@ -141,7 +141,7 @@
             this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
             this.guna2Button1.ImageSize = new System.Drawing.Size(30, 30);
             this.guna2Button1.Location = new System.Drawing.Point(2, 412);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(192, 37);
             this.guna2Button1.TabIndex = 2;
@@ -162,7 +162,7 @@
             this.btnViewUser.Image = ((System.Drawing.Image)(resources.GetObject("btnViewUser.Image")));
             this.btnViewUser.ImageSize = new System.Drawing.Size(30, 30);
             this.btnViewUser.Location = new System.Drawing.Point(0, 538);
-            this.btnViewUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnViewUser.Margin = new System.Windows.Forms.Padding(2);
             this.btnViewUser.Name = "btnViewUser";
             this.btnViewUser.Size = new System.Drawing.Size(192, 37);
             this.btnViewUser.TabIndex = 2;
@@ -183,7 +183,7 @@
             this.btnProfile.Image = ((System.Drawing.Image)(resources.GetObject("btnProfile.Image")));
             this.btnProfile.ImageSize = new System.Drawing.Size(30, 30);
             this.btnProfile.Location = new System.Drawing.Point(0, 619);
-            this.btnProfile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnProfile.Margin = new System.Windows.Forms.Padding(2);
             this.btnProfile.Name = "btnProfile";
             this.btnProfile.Size = new System.Drawing.Size(192, 37);
             this.btnProfile.TabIndex = 2;
@@ -204,7 +204,7 @@
             this.btnAddUser.Image = ((System.Drawing.Image)(resources.GetObject("btnAddUser.Image")));
             this.btnAddUser.ImageSize = new System.Drawing.Size(30, 30);
             this.btnAddUser.Location = new System.Drawing.Point(0, 345);
-            this.btnAddUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddUser.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddUser.Name = "btnAddUser";
             this.btnAddUser.Size = new System.Drawing.Size(192, 37);
             this.btnAddUser.TabIndex = 2;
@@ -226,7 +226,7 @@
             this.btnDashbord.Image = ((System.Drawing.Image)(resources.GetObject("btnDashbord.Image")));
             this.btnDashbord.ImageSize = new System.Drawing.Size(30, 30);
             this.btnDashbord.Location = new System.Drawing.Point(0, 254);
-            this.btnDashbord.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDashbord.Margin = new System.Windows.Forms.Padding(2);
             this.btnDashbord.Name = "btnDashbord";
             this.btnDashbord.Size = new System.Drawing.Size(192, 37);
             this.btnDashbord.TabIndex = 2;
@@ -249,7 +249,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(9, 20);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(170, 169);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -261,10 +261,27 @@
             this.panel2.Controls.Add(this.uC_KhoThuoc1);
             this.panel2.Controls.Add(this.uC_Dashbord1);
             this.panel2.Location = new System.Drawing.Point(194, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1670, 1301);
             this.panel2.TabIndex = 1;
+            // 
+            // uC_KhoThuoc1
+            // 
+            this.uC_KhoThuoc1.Location = new System.Drawing.Point(-3, 0);
+            this.uC_KhoThuoc1.Margin = new System.Windows.Forms.Padding(2);
+            this.uC_KhoThuoc1.Name = "uC_KhoThuoc1";
+            this.uC_KhoThuoc1.Size = new System.Drawing.Size(1253, 855);
+            this.uC_KhoThuoc1.TabIndex = 1;
+            this.uC_KhoThuoc1.Load += new System.EventHandler(this.uC_KhoThuoc1_Load);
+            // 
+            // uC_Dashbord1
+            // 
+            this.uC_Dashbord1.Location = new System.Drawing.Point(0, 2);
+            this.uC_Dashbord1.Margin = new System.Windows.Forms.Padding(2);
+            this.uC_Dashbord1.Name = "uC_Dashbord1";
+            this.uC_Dashbord1.Size = new System.Drawing.Size(1250, 895);
+            this.uC_Dashbord1.TabIndex = 0;
             // 
             // guna2Elipse1
             // 
@@ -278,22 +295,6 @@
             // 
             this.guna2Elipse3.TargetControl = this.panel2;
             // 
-            // uC_KhoThuoc1
-            // 
-            this.uC_KhoThuoc1.Location = new System.Drawing.Point(-3, 0);
-            this.uC_KhoThuoc1.Margin = new System.Windows.Forms.Padding(2);
-            this.uC_KhoThuoc1.Name = "uC_KhoThuoc1";
-            this.uC_KhoThuoc1.Size = new System.Drawing.Size(1253, 855);
-            this.uC_KhoThuoc1.TabIndex = 1;
-            // 
-            // uC_Dashbord1
-            // 
-            this.uC_Dashbord1.Location = new System.Drawing.Point(0, 2);
-            this.uC_Dashbord1.Margin = new System.Windows.Forms.Padding(2);
-            this.uC_Dashbord1.Name = "uC_Dashbord1";
-            this.uC_Dashbord1.Size = new System.Drawing.Size(1250, 895);
-            this.uC_Dashbord1.TabIndex = 0;
-            // 
             // frmAddmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -303,7 +304,7 @@
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmAddmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAddmin";

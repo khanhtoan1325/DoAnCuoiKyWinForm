@@ -45,6 +45,7 @@ namespace DangNhap
                         else
                         {
                             frmNguoiDung frmNguoiDung = new frmNguoiDung();
+                            frmNguoiDung.SetUserName(user.HoTen);
                             frmNguoiDung.Show();
                         }
                         this.Hide();
@@ -64,6 +65,7 @@ namespace DangNhap
                 MessageBox.Show("Đã xảy ra lỗi: " + ex.Message, "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
         private void btnSignUp_Click(object sender, EventArgs e)
         {
